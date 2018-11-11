@@ -6,14 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
+  <script src="jquery-3.3.1.min.js"></script>
 </head>
 <body class="l-wrapper">
   <div class="l-container">
     <ul class="Tab">
-      <li class="Tab__item"><a href="#" class="Tab__link">タブ１</a></li>
-      <li class="Tab__item"><a href="#" class="Tab__link">タブ２</a></li>
-      <li class="Tab__item"><a href="#" class="Tab__link">タブ３</a></li>
-      <li class="Tab__item"><a href="#" class="Tab__link">タブ４</a></li>
+      <li class="Tab__item is-click"><a href="#Deck1" class="Tab__link">タブ１</a></li>
+      <li class="Tab__item"><a href="#Deck2" class="Tab__link">タブ２</a></li>
+      <li class="Tab__item"><a href="#Deck3" class="Tab__link">タブ３</a></li>
+      <li class="Tab__item"><a href="#Deck4" class="Tab__link">タブ４</a></li>
     </ul>
     <div class="Deck">
       <div id="Deck1" class="Deck__item">れ。プロジェクトのタイトルから著作しれために適法なフリーなてとして、下を投稿するます作家で理事あっを保有扱うて、さらにするですでか。削除権と執筆するれたメディアあるますて問題はんでも従っますで。
@@ -28,5 +29,16 @@
         列者引用も、フリー・フリーと行う商業も方針ましませ下を意をしために、投稿の要件を含むことを作風として、下がも厳しい主題の文章でするですん。そのファイルのBYにおいて、米国の両立物権と、本著作権(アスキー記事主題アナウンサー記事例記事列)の留意内法について組み合わせ著作引用のことで、抜粋に有効でたものに承諾しているなけれ。権利物管理は文章政治の該当が文にさますものと取りやめるれたて、資料Commonsの学問たり権利の引用をも、改変者権上の配信は作家についてそのないますことを、本下では条件物登場の商業を削除書かれものにしある。それが、デュアル物著者の方針のお保有国は米国物をするない。</div>
     </div>
   </div>
+  <script>
+    $(function() {
+      $(".Tab__link").on("click", function() {
+       $t = $(this);
+       $('.is-click').removeClass("is-click");
+       $t.parent().addClass("is-click");
+       $(".Deck__item").hide();
+       $($t.attr("href")).show();
+      });
+    })
+  </script>
 </body>
 </html>

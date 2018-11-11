@@ -397,11 +397,11 @@ li {
   display: table-cell;
   height: 40px;
   color: #fff;
-  background-color: #75917f;
+  background-color: #465a4d;
 }
 
-.Tab__item:not(:first-child) {
-  background-color: #465a4d;
+.Tab__item.is-click {
+  background-color: #75917f;
 }
 
 .Tab__link {
@@ -410,6 +410,10 @@ li {
   width: 100%;
   display: block;
   line-height: 40px;
+}
+
+.Tab__link:hover {
+  background-color: #75917f;
 }
 
 .Deck {

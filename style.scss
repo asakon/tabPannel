@@ -19,9 +19,9 @@ li {
     display: table-cell;
     height: 40px;
     color: #fff;
-    background-color: #75917f;
-    &:not(:first-child) {
-      background-color: #465a4d;
+    background-color: #465a4d;
+    &.is-click {
+      background-color: #75917f;
     }
   }
   &__link {
@@ -30,6 +30,9 @@ li {
     width: 100%;
     display: block;
     line-height: 40px;
+    &:hover {
+      background-color: #75917f;
+    }
   }
 }
 .Deck {
