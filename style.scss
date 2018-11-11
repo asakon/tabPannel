@@ -1,0 +1,42 @@
+@import "ress";
+li {
+  list-style: none;
+}
+.l-wrapper {
+  background-color: #c0e9cf;
+}
+.l-container {
+  width: 600px;
+  margin: 20px auto;
+  background-color: #fff;
+}
+.Tab {
+  display: table;
+  // border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+  &__item {
+    display: table-cell;
+    height: 40px;
+    color: #fff;
+    background-color: #75917f;
+    &:not(:first-child) {
+      background-color: #465a4d;
+    }
+  }
+  &__link {
+    color: inherit;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    line-height: 40px;
+  }
+}
+.Deck {
+  padding: 10px;
+  &__item {
+    &:not(:first-child) {
+      display: none;
+    }
+  }
+}
